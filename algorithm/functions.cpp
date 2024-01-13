@@ -4,7 +4,7 @@ long long floor(long long x, long long m) {
 
 
 long long pow(long long x, long long n, long long m) {
-   long long ret = 1;
+   long long ret = 1 % m;
    while (n) {
       if (n & 1) ret = (ret * x) % m;
       x = (x * x) % m;
